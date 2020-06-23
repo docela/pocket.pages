@@ -1,1 +1,69 @@
-<h1>Homepage</h1>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<section id="home">
+  <!-- Search Area -->
+  <section id="search-bar">
+    <p>Search</p>
+    <form>
+      <div class="search-shelf">
+        <input type="text" placeholder="Search your Shelf"> &nbsp &nbsp <a href="#"><i class="fas fa-search"></i></a>
+      </div>
+    </form>
+  </section>
+  <hr>
+  <!-- Recent Reads -->
+  <section id="recent-reads">
+
+    <div id="calls">
+      <a href="#">View Random Books</a>
+      <p>Recent Reads</p>
+      <a href="{% url 'books' %}">View All Books...</a>
+    </div>
+
+    <section class="deck">
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+    </section>
+
+
+
+  </section>
+</section>
+{% endblock %}

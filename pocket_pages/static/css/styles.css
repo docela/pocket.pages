@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  font-family: 'Ramaraja', serif;
+  overflow-x: hidden;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Navigation Bar */
+
+nav {
+  height: 12vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255) !important;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#full-logo, #logo {
+  height: auto;
+  width: auto;
+  max-height: 120px;
+}
+
+#logo {
+  max-height: 75px;
+}
+
+.login-btn {
+  height: 14px;
+  /* align-self: center; */
+}
+
+.index-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  border: 2px solid #710B7E;
+  color: #710B7E !important;
+  border-radius: 12px;
+  margin-right: 15px;
+  padding: 12px;
+  font-weight: 100;
+  transition: background-color 0.75s, color 0.75s;
+}
+
+#login {
+  border: none;
+}
+
+.index-btn:hover {
+  background-color: #710B7E;
+  color: white !important;
+}
+
+
+
+/* The index page */
+
+.container {
+  max-width: 70vw;
+  max-height: 70vh;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.frontpage {
+  max-width: 50%;
+  max-height: 100%;
+  margin-top: 2rem;
+}
+
+.sales {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.sales div {
+  /* align-items: center; */
+  margin-top: 15rem;
+  align-self: center;
+}
+
+.sales h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.sales p {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+span {
+  color: #710B7E;
+}
+
+#sign-up-now {
+  border: 2px solid #710B7E;
+  color: #710B7E;
+  padding: 1rem;
+  /* font-size: 2rem !important; */
+  max-width: 250px;
+}
+
+#reader {
+  width: 30rem;
+  /* height: 212px; */
+}
+
+/* img #analysis {
+  max-width: 2rem;
+  max-height: 2rem;
+}
+
+#pie {
+  max-width: 300px;
+}  */
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(113, 11, 126);
+  padding: 1.5rem;
+  color: white;
+  width: 100vw;
+  align-items: baseline;
+}
+
+.ftr {
+  align-self: center;
+}
+
+footer p {
+  font-size: 1.25em;
+  align-self: center;
+  margin: -1em;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.fab {
+  margin-right: 1rem;
+}
+
+/* Homepage */
+#home {
+  height: 100%;
+}
+
+#search-bar, .area {
+  min-height: 20vh;
+  /* max-height: 50vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-bar p {
+  font-size: 5em;
+  letter-spacing: .25em;
+}
+
+#search-bar input[type="text"], #books-shelf input[type="text"] {
+  width: 60vw;
+  padding: .5em;
+  border-radius: 12px;
+}
+
+.fa-search {
+  font-size: 1.5em;
+}
+
+.search-shelf, #calls {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#recent-reads {
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  /* max-height: 50vh; */
+}
+
+#calls {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#calls p {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.deck {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  text-align: center;
+  border: 2px solid #710b7e;
+  width: 300px;
+  height: 400px;
+  margin: 2em;
+}
+
+#recent-reads .card img {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+
+/* About */
+.cont {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  max-width: 65vw;
+  font-size: larger;
+  margin-top: 7rem;
+}
+
+.about p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+
+/* Shelf */
+.holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#all-books {
+  /* max-width: 85vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+#all-books h1 {
+  margin: 1rem;
+  font-size: 5rem;
+}
+
+#books {
+  margin: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  flex-basis: 25%;
+}

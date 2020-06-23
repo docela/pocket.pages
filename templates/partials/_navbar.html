@@ -1,0 +1,32 @@
+{% load static %}
+
+<nav>
+  {% if '/' == request.path %}
+  <a class="navbar" href="{% url 'index' %}" style="visibility: hidden;" >
+    <img src="{% static 'img/p.p_logo.png' %}" id="logo" alt="Logo">
+  </a>
+
+  <a class="navbar" href="{% url 'index' %}">
+    <img src="{% static 'img/pp_logo.png' %}" id="full-logo" alt="Full-Logo">
+  </a>
+  
+  {% else %}
+  <a class="navbar" href="{% url 'index' %}">
+    <img src="{% static 'img/p.p_logo.png' %}" id="logo" alt="Logo">
+  </a>
+
+  <a class="navbar" href="{% url 'index' %}" style="visibility: hidden;" >
+    <img src="{% static 'img/pp_logo.png' %}" id="full-logo" alt="Full-Logo">
+  </a>
+
+  {% endif %}
+  <section class="login-btn">
+    <a href="#" class="index-btn" id="login">
+      Login
+    </a>
+
+    <a href="#" class="index-btn" id="sign-up">
+      Sign Up
+    </a>
+  </section>
+</nav>

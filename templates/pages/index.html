@@ -1,1 +1,59 @@
-<h1>Index</h1>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="container">
+  <!--Text side-->
+  <section class="sales frontpage">
+    <div>
+      <h3>Your bookshelf at your fingertips <span>.</span></h3>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolore beatae nulla, eaque odio laudantium
+        deleniti culpa molestiae hic cumque, inventore non magnam ipsum placeat illo libero dolor consequuntur
+        quibusdam.</p>
+      <br>
+    </div>
+    <a href="#" class="index-btn" id="sign-up-now">
+      Sign Up Now
+    </a>
+  </section>
+  <!--Image side-->
+  <section class="image frontpage">
+    <img src="{% static 'img/index-mvp.svg' %}" id="reader" alt="A reader">
+  </section>
+</section>
+
+<section class="container" id="second" >
+  <section class="image frontpage">
+    <img src="{% static 'img/index-mvp.svg' %}" id="pie" alt="Pie-chart">
+  </section>
+  <section class="sales frontpage">
+    <div>
+      <h3>Lorem ipsum dolor sit amet consectetur <span>.</span></h3>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolore beatae nulla, eaque odio laudantium
+        deleniti culpa molestiae hic cumque, inventore non magnam ipsum placeat illo libero dolor consequuntur
+        quibusdam.</p>
+      <br>
+    </div>
+  </section>
+</section>
+
+<section class="container">
+  <section class="sales frontpage">
+    <div>
+      <h3>Itaque dolore beatae nulla <span>.</span></h3>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolore beatae nulla, eaque odio laudantium
+        deleniti culpa molestiae hic cumque, inventore non magnam ipsum placeat illo libero dolor consequuntur
+        quibusdam.</p>
+      <br>
+    </div>
+  </section>
+  <!--Image side-->
+  <section class="image frontpage analysis">
+    <img src="{% static 'img/index-mvp.svg' %}" id="analysis" alt="Analytics">
+  </section>
+</section>
+{% endblock %}

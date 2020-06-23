@@ -1,1 +1,97 @@
-<h1>Books</h1>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="holder">
+  <!-- Search Area -->
+  <section class="area">
+    <form>
+      <div id="books-shelf" class="search-shelf">
+        <input type="text" placeholder="Search your Shelf"> &nbsp &nbsp <a href="#"><i class="fas fa-search"></i></a>
+      </div>
+    </form>
+  </section>
+
+  <hr>
+
+  <!--All Books-->
+  <section id="all-books">
+    <h1>Book Shelf</h1>
+    <section id="books">
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/no-image.svg' %}" alt="Book Image" class="card-img">
+        <div class="card-body">
+          <p class="card-title">Book Title</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea ut?.</p>
+          <button>View Book</button>
+        </div>
+      </div>
+
+    </section>
+  </section>
+</section>
+{% endblock%}
