@@ -3,7 +3,7 @@
 <nav>
   {% if '/' == request.path %}
   <a class="navbar" href="{% url 'index' %}" style="visibility: hidden;" >
-    <img src="{% static 'img/p.p_logo.png' %}" id="logo" alt="Logo">
+    <img src="{% static 'img/p.p_logo.svg' %}" id="logo" alt="Logo">
   </a>
 
   <a class="navbar" href="{% url 'index' %}">
@@ -12,7 +12,7 @@
   
   {% else %}
   <a class="navbar" href="{% url 'index' %}">
-    <img src="{% static 'img/p.p_logo.png' %}" id="logo" alt="Logo">
+    <img src="{% static 'img/p.p_logo.svg' %}" id="logo" alt="Logo">
   </a>
 
   <a class="navbar" href="{% url 'index' %}" style="visibility: hidden;" >

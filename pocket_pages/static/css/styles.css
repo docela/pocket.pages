@@ -8,6 +8,8 @@ body {
   width: 100vw;
   font-family: 'Ramaraja', serif;
   overflow-x: hidden;
+  background-image: url('../img/background-image(1).svg');
+  background-repeat: repeat;
 }
 
 a:link, a:visited {
@@ -21,7 +23,7 @@ a:link, a:visited {
 nav {
   height: 12vh;
   width: 100vw;
-  background-color: rgb(255, 255, 255) !important;
+  /* background-color: rgb(255, 255, 255) !important; */
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -280,5 +282,68 @@ footer p {
   display: flex;
   flex-wrap: wrap;
   align-self: center;
-  flex-basis: 25%;
+}
+
+/* Add Book Page  */
+.add {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.hold {
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.form-area {
+  width: 50vh;
+}
+
+form[input="type"] {
+  padding: .5em;
+  border-radius: 12px;
+}
+
+#details {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.half {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.right-half {
+  width: 25%;
+}
+
+#cover {
+  width: 20rem;
+  height: 30rem;
+  border: 2px solid #710B7E;
+  border-radius: 12px;
+}
+
+.review-area {
+  margin-top: 3rem;
+}
+
+.cover-btn {
+  padding: .5rem;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 12px;
+  background-color: #710B7E;
+  border: 2px solid #710b7e;
+  color: white;
+  margin: 1rem;
+  transition: background-color .75s, border .75s;
+}
+
+.cover-btn:hover {
+  background-color: #34063a;
+  border: 2px solid #34063a;
 }

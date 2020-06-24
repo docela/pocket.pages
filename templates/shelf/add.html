@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+  <h1 class="add">Add to Shelf</h1>
+  <section class="hold">
+
+    <section class="form-area">
+      <form action="">
+        <section id="details">
+          <section class="half left-half">
+            Title:
+            <input type="text" name="title" id="title">
+            Author(s):
+            <input type="text" name="authors" id="authors">
+            Genre(s):
+            <input type="text" name="genres" id="genres">
+          </section>
+
+          <section class="half right-half">
+            Year Published:
+            <input type="text" name="year_pub" id="year_pub">
+            Rating:
+            <input type="text" name="rating" id="rating">
+          </section>
+        </section>
+
+        <section class="review-area">
+          <h3>Review:</h3>
+          <textarea name="review" id="review" cols="70" rows="7"></textarea>
+        </section>
+
+        <input type="submit" class="cover-btn" value="Add to Shelf">
+
+      </form>
+    </section>
+
+    <section class="upload-cover">
+      <section class="image-upload">
+        <h2>Cover</h2>
+        <div id="cover"></div>
+      </section>
+      <section class="upload-buttons">
+        <button class="cover-btn cover-search">Search for Cover</button>
+        <button class="cover-btn cover-search">Upload Image</button>
+      </section>
+    </section>
+
+  </section>
+</section>
+{% endblock %}
